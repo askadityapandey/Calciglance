@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet"/>
+    <link href="/style.css" rel="stylesheet"/>
+    <title>Calciglance</title>
+</head>
+<body class="bg-cyan">
+    <nav class="bg-gradient-to-r from-purple-500 to-black py-3 px-0" >
+        <div class="py-0 px-0 text-white font-bold text-2xl"><h1> Calciglance</h1></div>
+        <ul class= " text-white flex absolute top-2 right-0" ><li><a link href="#">Home</li>
+        <li class="px-3"><a link href="#">About</a></li></ul>
+    </nav>
+<h1 class="text-3xl font-bold py-3">
+    Welcome to CALCIGLANCE! Your favourite tool for fast and accurate calculation.</h1>
+    <div class="max-w bg-gray-500">
+        <div class="flex flex-row justify-center">
+           <input id ="result" class="bg-gray-200 rounded-lg py-2 px-4 focus:outline-none focus:ring focus:border-purple-500"type="text">
+        </div>
+        <div class ="flex flex-row justify-center">
+            <button onclick="appendToResult('9')" class="button p-2 m-2 bg-indigo-500 rounded-full">9</button>
+            <button onclick="appendToResult('8')" class="button p-2 m-2 bg-indigo-500 rounded-full">8</button>
+            <button onclick="appendToResult('7')" class="button p-2 m-2 bg-indigo-500 rounded-full">7</button>
+            <button onclick="appendToResult('6')" class="button p-2 m-2 bg-indigo-500 rounded-full">6</button>
+        </div>
+
+        <div class ="flex flex-row justify-center">
+            <button onclick="appendToResult('5')" class="button p-2 m-2 bg-indigo-500 rounded-full">5</button>
+            <button onclick="appendToResult('4')" class="button p-2 m-2 bg-indigo-500 rounded-full">4</button>
+            <button onclick="appendToResult('3')" class="button p-2 m-2 bg-indigo-500 rounded-full">3</button>
+            <button onclick="appendToResult('2')" class="button p-2 m-2 bg-indigo-500 rounded-full">2</button>
+        </div>
+        <div class ="flex flex-row justify-center">
+            <button onclick="appendToResult('1')" class="button p-2 m-2 bg-indigo-500 rounded-full">1</button>
+            <button onclick="appendToResult('0')" class="button p-2 m-2 bg-indigo-500 rounded-full">0</button>
+            <button onclick="appendToResult('+')" class="button p-2 m-2 bg-indigo-500 rounded-full">+</button>
+            <button onclick="appendToResult('-')" class="button p-2 m-2 bg-indigo-500 rounded-full">-</button>
+        </div>
+        <div class ="flex flex-row justify-center">
+            <button onclick="appendToResult('/')" class="button p-2 m-2 bg-indigo-500 rounded-full">/</button>
+            <button onclick="appendToResult('*')" class="button p-2 m-2 bg-indigo-500 rounded-full">*</button>
+            <button onclick="clearResult()" class="button p-2 m-2 bg-indigo-500 rounded-full">C</button>
+            <button onclick="calculateResult()" class="button p-2 m-2 bg-indigo-500 rounded-full">=</button>
+        </div>
+    </div>
+<script src="./index.js"></script>
+</body>
+</html>
